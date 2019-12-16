@@ -27,12 +27,15 @@
 .banner .banner-button button {
     display: block;
     width: 250px;
-    border: 1px solid darkslategray;
+    border: 1px solid  #50e3c2;
     margin-bottom: 20px;
     border-radius: 27.5px;
     padding: 20px 30px;
-    color: white;
-    background: darkslategray;
+    color: black;
+    background:   #50e3c2;
+}
+.banner .banner-button button:hover{
+    background: white;
 }
 
 .booking-room {
@@ -47,7 +50,9 @@
     padding: 20px 30px;
     width: 250px;
 }
-
+.booking-room #register:hover{
+    background: white;
+}
 .booking-room ul li {
     list-style: none;
     margin-left: -50px;
@@ -72,7 +77,6 @@
     margin-bottom: 20px;
 }
 .service-livestream button{
-    color:white;
     background: #f21733;
     border: 1px solid #f21733;
     border-radius: 27.5px;
@@ -80,9 +84,15 @@
     margin-bottom: 20px;
     width: 200px;
 }
+.service-livestream button:hover{
+    background: white;
+}
 .service-livestream .service-livestream-content{
     padding-top:200px;
     padding-bottom: 500px;
+}
+.swipper-3d{
+    padding:100px 0;
 }
 .swiper-container {
 width: 100%;
@@ -139,7 +149,9 @@ text-align: right;
     padding: 20px 20px;
     width: 200px;
 }
-
+.deposit .btn-deposit button:hover{
+    background: white;
+}
 .deposit .container .deposit-img img {
     position: absolute;
     bottom: 0;
