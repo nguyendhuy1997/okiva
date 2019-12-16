@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewChild } from '@angular/core';
+import { SwiperComponent } from 'angular2-useful-swiper';
 
 @Component({
   selector: 'app-support',
@@ -13,17 +14,20 @@ export class SupportComponent implements OnInit {
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 50,
+      rotate: 0,
       stretch: 0,
-      depth: 100,
+      depth: 500,
       modifier: 1,
-      slideShadows: true,
+      slideShadows: false
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    spaceBetween: 30
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
   };
   constructor() { }
 

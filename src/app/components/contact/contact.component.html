@@ -2,17 +2,17 @@
     <div class="banner-contact">
         <h1>Liên hệ <br>với chúng tôi</h1>
         <div class="banner-switch-button-mobile">
-            <button (click)="changeData(0)" id="office" class="active"><span class="pr-2"><img src="../../../assets/img/head-office.png" alt=""></span>Head
+            <button (click)="changeData(0)" id="office" [ngClass]="{'active':check == 0}"><span class="pr-2"><img src="../../../assets/img/head-office.png" alt=""></span>Head
                 Office</button>
-            <button (click)="changeData(1)" id="studio" class=""><span class="pr-2"><img src="../../../assets/img/studio-logo.png" alt=""></span>Studio
+            <button (click)="changeData(1)" id="studio"[ngClass]="{'active':check == 1}"><span class="pr-2"><img src="../../../assets/img/studio-logo.png" alt=""></span>Studio
                 Livestream</button>
         </div>
 
     </div>
     <div class="banner-switch-button">
-        <button (click)="changeData(0)" id="office" class="active"><span ><img src="../../../assets/img/head-office.png" alt=""></span>Head
+        <button (click)="changeData(0)" id="office"[ngClass]="{'active':check == 0}"><span ><img src="../../../assets/img/head-office.png" alt=""></span>Head
             Office</button>
-        <button (click)="changeData(1)" id="studio" class=""><span><img src="../../../assets/img/studio-logo.png" alt=""></span>Studio
+        <button (click)="changeData(1)" id="studio"[ngClass]="{'active':check == 1}" class=""><span><img src="../../../assets/img/studio-logo.png" alt=""></span>Studio
             Livestream</button>
     </div>
     <img id="banner-bird" src="../../../assets/img/bird.png" alt="">
@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div class="map">
+        <div class="map mb-5">
             <img class="map img-fluid" src="../../../assets/img/map-1.jpeg" alt="">
         </div>
     </div>

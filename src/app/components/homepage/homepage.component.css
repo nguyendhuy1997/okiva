@@ -5,7 +5,7 @@
     margin:5px;
   }
 .carousel-indicators .active{
-    background-color: #2EFE9A;
+    background-color:#50e3c2;
 } 
 ul li {
     list-style: none;
@@ -39,9 +39,12 @@ ul li {
 
         .btn-submit button {
             border: 2px solid #f21733;
-            background: white;
-            color: #f21733;
+            background:white;
+            color: #45494f;
             border-radius: 27.5px;
+        }
+        .btn-submit button:hover{
+            background: #f21733;
         }
 
         .form ul li {

@@ -1,0 +1,153 @@
+.banner {
+    background-image: url('../../../assets/img/support-banner.jpg');
+    background-position: 100% 100%;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.banner .banner-support {
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+.banner .banner-support h1 {
+    font-weight: 800;
+}
+
+.banner .banner-button {
+    margin-top: 50px;
+}
+
+.banner .banner-button button {
+    display: block;
+    width: 250px;
+    border: 1px solid darkslategray;
+    margin-bottom: 20px;
+    border-radius: 27.5px;
+    padding: 20px 30px;
+    color: white;
+    background: darkslategray;
+}
+
+.booking-room {
+    background: #f6f6f6;
+}
+
+.booking-room #register {
+    margin-top: 20px;
+    border: 1px solid #50e3c2;
+    background: #50e3c2;
+    border-radius: 27.5px;
+    padding: 20px 30px;
+    width: 250px;
+}
+
+.booking-room ul li {
+    list-style: none;
+    margin-left: -50px;
+    padding: 10px;
+
+}
+
+.service-livestream{
+    background-image: url('../../../assets/img/support-form.jpg');
+    background-position: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+.service-livestream .form-input input {
+    border: 1px solid lightgrey;
+    border-radius: 27.5px;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+.service-livestream button{
+    color:white;
+    background: #f21733;
+    border: 1px solid #f21733;
+    border-radius: 27.5px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+.service-livestream .service-livestream-content{
+    padding-top:200px;
+    padding-bottom: 500px;
+}
+.swiper-container {
+width: 100%;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.swiper-slide {
+background-position: center;
+background-size: cover;
+width: 300px;
+height: 300px;
+
+}
+.swiper-slide{
+    opacity: 0.5;
+}
+.swiper-slide-active{
+text-align: center;
+opacity: 1;
+}
+.swiper-slide-prev{
+text-align: right;
+
+}
+.swiper-button-next{
+    right:40%;
+}
+.swiper-button-prev{
+    left: 40%;
+}
+.swiper-button-next, .swiper-button-prev{
+    top:100%;
+    height:14px;
+    margin-top:-28px;
+}
+.deposit {
+    color: white;
+    background: #f21733;
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.deposit .container {
+    padding-bottom: 200px;
+}
+
+.deposit .btn-deposit button {
+    border: 1px solid #50e3c2;
+    background: #50e3c2;
+    border-radius: 27.5px;
+    padding: 20px 20px;
+    width: 200px;
+}
+
+.deposit .container .deposit-img img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(20%, 20%);
+}
+@media screen and (max-width: 768px) {
+    .service-livestream .container{
+    padding-bottom: 100px;
+    }
+}

@@ -8,7 +8,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { SupportComponent } from './components/support/support.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RecruitmentComponent } from './components/recruitment/recruitment.component';
-import { Angular2UsefulSwiperModule} from 'angular2-useful-swiper';
+import { FeatureComponent } from './components/feature/feature.component';
+import { SwiperModule } from 'ngx-swiper-wrapper';
+import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,12 +20,13 @@ import { Angular2UsefulSwiperModule} from 'angular2-useful-swiper';
     ContactComponent,
     SupportComponent,
     FooterComponent,
-    RecruitmentComponent
+    RecruitmentComponent,
+    FeatureComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    Angular2UsefulSwiperModule
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

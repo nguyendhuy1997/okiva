@@ -150,7 +150,6 @@
     max-width: 100%;
   }
   #livestream .button-group .custom-2nd-btn {
-    margin-left: 15px;
     background-color: transparent;
     border: 2px solid white;
     color: white;
@@ -510,6 +509,12 @@
     #chance-for-jobs .chance-item-container {
       padding-right: 15px;
     }
+  }
+  button:focus {
+    outline: none;
+  }
+  input:focus {
+    outline: none;
   }
   @media screen and (max-width: 640px) {
     #livestream .live-text {

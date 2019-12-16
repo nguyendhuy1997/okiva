@@ -1,98 +1,3 @@
-<style>
-    .banner {
-        background-image: url('../../../assets/img/support-banner.jpg');
-        background-position: 100% 100%;
-        background-size: cover;
-        max-width: 100%;
-        height: 100vh;
-        position: relative;
-        color: white;
-    }
-
-    .banner .banner-support {
-        color: white;
-        font-weight: 800;
-        position: absolute;
-        left: 15%;
-        top: 20%;
-    }
-
-    .banner .banner-support h1 {
-        font-weight: 800;
-    }
-
-    .banner .banner-button {
-        margin-top: 50px;
-    }
-
-    .banner .banner-button button {
-        display: block;
-        width: 250px;
-        border: 1px solid darkslategray;
-        margin-bottom: 20px;
-        border-radius: 27.5px;
-        padding: 20px 30px;
-        color: white;
-        background: darkslategray;
-    }
-
-    .section-1 {
-        background: #f6f6f6;
-    }
-
-    .section-1 #register {
-        margin-top: 20px;
-        border: 1px solid #2efe9a;
-        background: #2EFE9A;
-        border-radius: 27.5px;
-        padding: 20px 30px;
-        width: 250px;
-    }
-
-    .section-1 ul li {
-        list-style: none;
-        margin-left: -50px;
-        padding: 10px;
-
-    }
-
-    .section-3 {
-        background-image: url('../../../assets/img/support-form.jpg');
-        background-position: 100% 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .section-3 .form-input input {
-        border: 1px solid lightgrey;
-        border-radius: 27.5px;
-        padding: 20px 30px;
-        margin-bottom: 20px;
-    }
-    .section-3 button{
-        color:white;
-        background: #f21733;
-        border: 1px solid #f21733;
-        border-radius: 27.5px;
-        padding: 20px 15px;
-        margin-bottom: 20px;
-        width: 200px;
-    }
-    .section-3 .section-3-content{
-        padding-top:200px;
-        padding-bottom: 500px;
-    }
-    
-    @media screen and (max-width: 768px) {
-        .section-3 .container{
-        padding-bottom: 100px;
-    }
-    }
-
-</style>
 <section class="banner">
     <div class="banner-support">
         <div class="title">
@@ -106,7 +11,7 @@
         </div>
     </div>
 </section>
-<section class="section-1 pt-5">
+<section class="booking-room pt-5">
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center pr-5">
@@ -114,10 +19,10 @@
                 <button id="register">Đăng ký ngay</button>
             </div>
             <div class="col-md-4 pt-6 text-left">
-                <div id="section-1-title">
+                <div id="booking-room-title">
                     <h1 style="font-weight:800">Đặt phòng livestream sản phẩm</h1>
                 </div>
-                <div id="section-1-content">
+                <div id="booking-room-content">
                     <ul>
                         <li>
                             <span>
@@ -197,34 +102,36 @@
         </div>
     </div>
 </section>
-<style>
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-    }
-</style>
-<section class="section-2 pt-5">
-        <div class="container swiper-container text-center">
-                <swiper [config]="config">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="../../../assets/img/sp-item-3.png" alt=""></div>
-                          <div class="swiper-slide"><img src="../../../assets/img/sp-item-3.png" alt=""></div>
-                          <div class="swiper-slide"><img src="../../../assets/img/sp-item-3.png" alt=""></div>
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                      </swiper>
+
+<section class='swipper-3d'>
+    <div class="swiper-container" [swiper]="config">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                    <img class="img-fluid" src="../../../assets/img/carousel-mini-1.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                    <img class="img-fluid" src="../../../assets/img/carousel-mini-1.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                    <img class="img-fluid" src="../../../assets/img/carousel-mini-1.png" alt="">
+                </div>
+            </div>
         </div>
-          
-   
+
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
 </section>
-<section class="section-3">
-    <div class="section-3-content container">
+<section class="service-livestream">
+    <div class="service-livestream-content container">
         <div class="row">
             <div class="col-md-6">
                 <div class="title pb-4">
@@ -235,61 +142,33 @@
                 Cung cấp người mẫu đến tận shop để livestream quảng cáo sản phẩm
             </div>
             <div class="col-md-6 pt-4">
-                <div class="form-input container">
-                    <div class="row">
-                        <input class="col-md-6" id="name" type="text" placeholder="Tên shop">
-                        <input class="col-md-6" id="email" type="text" placeholder="Email">
+                <form action="">
+                    <div class="form-input container">
+                        <div class="row">
+                            <input class="col-md-6" id="name" type="text" placeholder="Tên shop">
+                            <input class="col-md-6" id="email" type="text" placeholder="Email">
+                        </div>
+                        <div class="row">
+                            <input class="col-md-6" id="address" type="text" placeholder="Địa chỉ shop">
+                            <input class="col-md-6" id="phone" type="text" placeholder="Số điện thoại">
+                        </div>
+                        <div class="row">
+                            <input class="col-md-12" id="ques1" type="text" placeholder="Shop bán sản phẩm nào?">
+                        </div>
+                        <div class="row">
+                            <input class="col-md-12" style="padding-bottom: 200px;" id="ques2" type="text" placeholder="Bạn có câu hỏi nào cho okiva không?">
+                        </div>
                     </div>
-                    <div class="row">
-                        <input class="col-md-6" id="address" type="text" placeholder="Địa chỉ shop">
-                        <input class="col-md-6" id="phone" type="text" placeholder="Số điện thoại">
+                    <div class="btn-submit-form text-right">
+                        <button type="submit" >Gửi ngay!</button>
                     </div>
-                    <div class="row">
-                        <input class="col-md-12" id="ques1" type="text" placeholder="Shop bán sản phẩm nào?">
-                    </div>
-                    <div class="row">
-                        <input class="col-md-12" style="padding-bottom: 200px;" id="ques2" type="text" placeholder="Bạn có câu hỏi nào cho okiva không?">
-                    </div>
-
-                </div>
-                <div class="btn-submit-form text-right">
-                    <button>Gửi ngay!</button>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 </section>
-<style>
-    .section-4 {
-        color: white;
-        background: #f21733;
-        background-size: cover;
-        max-width: 100%;
-        position: relative;
-        overflow: hidden;
 
-    }
-
-    .section-4 .container {
-        padding-bottom: 200px;
-    }
-
-    .section-4 .btn-deposit button {
-        border: 1px solid #2EFE9A;
-        background: #2efe9a;
-        border-radius: 27.5px;
-        padding: 20px 20px;
-        width: 200px;
-    }
-
-    .section-4 .container .section-4-img img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        transform: translate(20%, 20%);
-    }
-</style>
-<section class="section-4">
+<section class="deposit">
     <div class="container">
         <div class="title pb-5">
             <h1 style="font-weight: 800">Ký gửi hàng hoá<br><span>cho Okiva</span>ngay hôm nay</h1>
@@ -301,7 +180,7 @@
         <div class="btn-deposit pt-5">
             <button>Ký gửi ngay</button>
         </div>
-        <div class="section-4-img">
+        <div class="deposit-img">
             <img class="img-fluid" src="../../../assets/img/deposit.png" alt="">
         </div>
 
