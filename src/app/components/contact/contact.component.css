@@ -1,0 +1,172 @@
+ul li {
+    list-style: none;
+}
+
+
+    .contact {
+            padding-top: 50px;
+        }
+        .contact ul{
+            padding:0;
+        }
+        .contact ul li {
+            display: flex;
+            align-items: center;
+        }
+        .contact ul li {
+            display: flex;
+            align-items: center;
+        }
+        .contact .contact-left-text{
+            padding-left: 10px;
+        }
+        .contact .img {
+            height: 42px;
+            width: 43px;
+            background: #f21733;
+            border-radius: 100%;
+        }
+
+        .contact .img img {
+            padding-top: 10px;
+        }
+
+        .btn-submit button {
+            border: 2px solid #f21733;
+            background: white;
+            color: #f21733;
+            border-radius: 27.5px;
+        }
+
+        .form ul li {
+            padding: 10px;
+        }
+
+        .form #name {
+            height: 55px;
+            width: 100%;
+            border-radius: 27.5px;
+            border: 1px solid #B1B3B7
+        }
+
+        .form #email {
+            height: 55px;
+            width: 100%;
+            border-radius: 27.5px;
+            border: 1px solid #B1B3B7
+        }
+
+        .form #phone {
+            height: 55px;
+            width: 100%;
+            border-radius: 27.5px;
+            border: 1px solid #B1B3B7
+        }
+
+        .form #message {
+            height: 55px;
+            width: 100%;
+            height: 142px;
+            border-radius: 14px;
+            border: 1px solid #B1B3B7
+        }
+        .contact-left ul{
+          padding-top: 75px;
+        }
+        .btn-submit button{
+            height: 60px;
+            width: 35%;
+        }
+
+::placeholder {
+color: #B1B3B7;
+font-size: 14px;
+padding:10px;
+}
+.banner{
+background-image:url('../../../assets/img/lien-he.jpg');
+background-position: 100% 100%;
+background-size: cover;
+max-width: 100%;
+height: 100vh;
+position: relative;
+}
+.banner .banner-contact{
+    color:white;
+    font-weight: 800;
+    position: absolute;
+    left: 15%;
+    top:35%;
+}
+.banner #banner-phone {
+    border: 10px solid white;
+    border-radius: 50px;
+    padding :22px 40px;
+    left: 17%;
+    background: #50E3C2;
+    position: absolute;
+    bottom: 0; 
+   transform: translateY(50%);
+   
+}
+.banner #banner-bird{
+    position: absolute;
+    left:8%;
+    bottom: 6.5%;
+}
+
+.banner .banner-switch-button button{
+    padding: 20px 30px;
+    border: 1px solid #f21733;
+    border-top-right-radius: 27.5px;
+    border-top-left-radius:27.5px;
+    background: #f21733;
+    color:white;
+    width:auto;
+}
+.banner .banner-switch-button{
+    bottom: 0;
+    position:absolute;
+    left: 60%;
+}
+.banner .banner-switch-button .active{
+    background: #dc1635;
+}
+.banner .banner-switch-button button span{
+    padding-right:20px;
+}
+.banner .banner-contact .banner-switch-button-mobile {
+        display: none;
+    }
+@media screen and (max-width: 768px) {
+    .banner{
+        background-position: 25% 100%;
+    }
+    .banner #banner-bird{
+       display: none;
+    }
+
+    .banner #banner-phone{
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+    .banner .banner-switch-button{
+        display: none;
+    }
+    .banner .banner-contact .banner-switch-button-mobile .active{
+        background: #dc1635;
+    }
+    .banner .banner-contact .banner-switch-button-mobile{
+        display: block;
+    }
+    .banner .banner-contact .banner-switch-button-mobile button{
+    border: 1px solid #f21733;
+    border-radius: 27.5px;
+    background: #f21733;
+    color:white;
+    margin: 20px 10px 20px 0;
+    width: 300px;
+    text-align: left;
+    padding:10px;
+    }
+}

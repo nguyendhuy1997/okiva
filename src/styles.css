@@ -1,1 +1,521 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: helvetica;
+    src: url(assets/font/helveticaneue.ttf);
+  }
+  input, button {
+    outline: none !important;
+  }
+  
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  
+  * {
+    font-family: helvetica;
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 70px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 52px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+  }
+  
+  #navbar {
+    padding: 0 88px;
+  }
+  #navbar .logo img {
+    border-right: 1px solid #b1b3b7;
+    padding-right: 13.5px;
+  }
+  #navbar .logo span {
+    color: #f21733;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 13.5px;
+  }
+  #navbar .navbar-brand {
+    margin: 30px 0;
+  }
+  #navbar .navbar-nav .nav-link {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #45494f;
+  }
+  #navbar .navbar-nav .nav-link.active {
+    color: #f21733;
+  }
+  #navbar .navbar-nav .final-item img {
+    border-right: 1px solid #b1b3b7;
+    padding-right: 13.5px;
+  }
+  #navbar .navbar-nav .language {
+    padding: 9px 0;
+  }
+  #navbar .navbar-nav .language img {
+    padding-right: 10px;
+  }
+  
+  #features {
+    padding-top: 170px;
+    background-image: url(assets/img/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    padding-bottom: 70px;
+    background-size: contain;
+  }
+  #features .feature-img img {
+    max-width: 100%;
+  }
+  #features .features-text ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  #features .features-text ul li {
+    padding-top: 30px;
+  }
+  #features .features-text ul li span {
+    margin-right: 18.5px;
+  }
+  #features .features-text ul li span img {
+    max-width: 30px;
+    width: 100%;
+  }
+  #features .features-text .watch {
+    display: flex;
+    align-items: center;
+    margin-top: 53px;
+    color: #f21733;
+    font-size: 30px;
+  }
+  #features .features-text .watch span {
+    margin-right: 34px;
+  }
+  
+  .custom-btn {
+    background-color: #50e3c2;
+    border-radius: 50px;
+    border: none;
+    padding: 15px 55px;
+    transition: 0.3s all;
+    color: #45494f !important;
+  }
+  .custom-btn:hover {
+    background-color: white;
+    color: #f21733;
+  }
+  
+  #livestream {
+    background-color: #f21733;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 150px;
+  }
+  #livestream .live-text {
+    color: white;
+    margin-bottom: 80px;
+  }
+  #livestream .live-img {
+    position: absolute;
+    right: 0;
+  }
+  #livestream .live-img img {
+    position: absolute;
+    right: 0;
+    max-width: 100%;
+  }
+  #livestream .button-group .custom-2nd-btn {
+    margin-left: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.3s all;
+  }
+  #livestream .button-group .custom-2nd-btn:hover {
+    color: #f21733;
+    background-color: white;
+  }
+  
+  .custom-btn.btn-red {
+    color: #f21733;
+    background-color: transparent;
+    border: 2px solid #f21733;
+    transition: 0.3s all;
+  }
+  .custom-btn.btn-red:hover {
+    background-color: #f21733;
+    color: white;
+  }
+  
+  .wave-img-unset {
+    vertical-align: unset;
+  }
+  
+  #support h1 {
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  #support .grid-item img {
+    margin: 0 auto;
+  }
+  #support .grid-item p {
+    text-align: center;
+    color: #45494f;
+    font-weight: bold;
+    margin-top: 35px;
+  }
+  #support .btn-red {
+    margin: 0 auto;
+    margin-top: 51px;
+  }
+  
+  #video {
+    padding-top: 50px;
+    background-color: #f21733;
+    padding-bottom: 170px;
+    color: white;
+    overflow: hidden;
+  }
+  #video .video-img img {
+    max-width: 100%;
+  }
+  #video .video-content h3 {
+    margin-bottom: 30px;
+  }
+  #video .video-content .download-btn-1,
+  #video .video-content .download-btn-2 {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #video .video-content .download-btn-1 a,
+  #video .video-content .download-btn-2 a {
+    display: block;
+  }
+  #video .video-content .download-btn-1 span,
+  #video .video-content .download-btn-2 span {
+    display: block;
+  }
+  #video .video-content .download-btn-1 span.qr-img,
+  #video .video-content .download-btn-2 span.qr-img {
+    background-color: #dc1635;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+  }
+  #video .video-content .download-btn-1 span.qr-img img,
+  #video .video-content .download-btn-2 span.qr-img img {
+    margin: 0 auto;
+  }
+  #video .video-content .download-btn-1 {
+    margin-right: 15px;
+  }
+  #video .qr {
+    margin-top: 45px;
+  }
+  
+  #footer {
+    border-top: 2px solid #b1b3b7;
+    padding: 90px 0;
+  }
+  #footer .footer-text {
+    margin-top: 30px;
+    color: #f21733;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  #footer .footer-content p {
+    white-space: pre-line;
+  }
+  #footer .footer-content ul.footer-logos {
+    list-style: none;
+    padding-left: 0;
+  }
+  #footer .footer-content ul.footer-logos li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  #footer .copyright p {
+    color: #242b36;
+    font-size: 13px;
+  }
+  
+  .mb-40 {
+    margin-bottom: 40px;
+  }
+  
+  .mb-long {
+    margin-bottom: 100px;
+  }
+  
+  #chance-for-jobs {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #chance-for-jobs .search-bar .search-content {
+    margin: 0 auto;
+    border: 1px solid #c6c6c6;
+    border-radius: 50px;
+    padding: 20px 40px;
+    display: inline-block;
+    width: 70%;
+  }
+  #chance-for-jobs .search-bar .search-content input {
+    border: none;
+  }
+  #chance-for-jobs .search-bar .search-content .search-text {
+    border-right: 1px solid #979797;
+    width: 70%;
+  }
+  #chance-for-jobs .search-bar .search-content .list-box {
+    width: 29%;
+  }
+  #chance-for-jobs .search-bar .search-btn {
+    width: 29%;
+    display: inline-block;
+    background-color: #50e3c2;
+    border-radius: 50px;
+    padding: 20px 90px;
+    border: none;
+    font-weight: bold;
+    margin-left: 0.5%;
+  }
+  #chance-for-jobs h1 {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  #chance-for-jobs .chance-item-container {
+    padding-right: 60px;
+    text-align: left;
+  }
+  #chance-for-jobs .chance-item-container .chance-item {
+    border-radius: 30px;
+    border: 1px solid #f8f8f8;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.17);
+    position: relative;
+  }
+  #chance-for-jobs .chance-item-container .chance-item .small-ico {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+  #chance-for-jobs .chance-item-container .chance-item .chance-item-content {
+    padding: 60px 30px 40px;
+  }
+  #chance-for-jobs .chance-item-container .chance-item .detail-btn {
+    border-top: 1px solid lightgray;
+    padding: 10px 0;
+  }
+  #chance-for-jobs .chance-item-container .chance-item h3 {
+    margin-bottom: 30px;
+  }
+  #chance-for-jobs .chance-item-container .chance-item a {
+    color: #50e3c2;
+    font-weight: bold;
+  }
+  #chance-for-jobs .custom-btn {
+    margin: 0 auto;
+  }
+  
+  #work-together {
+    background-image: url(assets/img/work-with-okiva.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 50%;
+  }
+  #work-together .float-item {
+    padding: 100px;
+    color: white;
+    border-radius: 30px;
+    position: absolute;
+  }
+  #work-together .float-item.float-item-1 {
+    background-color: #062b4f;
+    z-index: 1;
+    width: 430px;
+    right: 0;
+    max-width: 100%;
+  }
+  #work-together .float-item.float-item-2 {
+    background-color: #f21733;
+    z-index: 2;
+    width: 470px;
+    padding-right: 170px;
+    left: -47%;
+    bottom: -250%;
+    max-width: 100%;
+  }
+  #work-together .float-item.float-item-3 {
+    background-color: white;
+    color: #45494f;
+    z-index: 3;
+    width: 400px;
+    bottom: -377%;
+    left: 8%;
+    max-width: 100%;
+  }
+  
+  #come-to-us {
+    position: relative;
+    padding: 90px 0 180px;
+    background-color: #f21733;
+    color: white;
+  }
+  #come-to-us .float-img {
+    position: absolute;
+    bottom: 50px;
+    left: 5%;
+    max-width: 100%;
+  }
+  #come-to-us .come-content h1 {
+    font-weight: bold;
+  }
+  #come-to-us .come-content span {
+    font-size: 35px;
+    vertical-align: top;
+    margin-right: 15px;
+  }
+  #come-to-us .come-content .sub-h1 {
+    display: inline-block;
+  }
+  #come-to-us .come-content .come-text {
+    padding-left: 160px;
+  }
+  #come-to-us .come-content .come-text p {
+    margin-top: 30px;
+  }
+  #come-to-us .come-content .come-text .custom-btn {
+    margin-top: 30px;
+    display: inline-block;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    #work-together {
+      padding-bottom: 5%;
+    }
+    #work-together h1 {
+      margin-bottom: 30px;
+    }
+    #work-together .float-item.float-item-1, #work-together .float-item.float-item-2, #work-together .float-item.float-item-3 {
+      width: unset !important;
+      position: unset !important;
+      margin-bottom: 30px;
+      padding: 50px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    #come-to-us .float-img {
+      position: relative;
+      max-width: 80%;
+      width: 100%;
+    }
+  
+    #come-to-us .come-content .come-text {
+      padding-left: 0;
+    }
+  
+    #come-to-us .come-content span {
+      font-size: 20px;
+    }
+  
+    #come-to-us .come-content .sub-h1 {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    #come-to-us .offset-md-6 {
+      margin: 0 auto !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 40px;
+    }
+  
+    #navbar {
+      padding: 0 15px;
+    }
+    #navbar .logo span {
+      display: block;
+      margin-top: 10px;
+    }
+    #navbar .navbar-collapse {
+      justify-content: space-around !important;
+      text-align: center;
+    }
+  
+    .navbar-light .navbar-toggler {
+      border: none;
+    }
+  
+    #livestream .button-group {
+      text-align: center;
+    }
+    #livestream .button-group .custom-btn {
+      margin-bottom: 15px;
+    }
+    #livestream .live-img {
+      position: relative;
+    }
+    #livestream .live-img img {
+      margin-top: 20px;
+      position: relative;
+    }
+  
+    #video .video-content {
+      text-align: center;
+    }
+    #video .download-btn-1,
+    #video .download-btn-2 {
+      width: 100%;
+    }
+  
+    #features {
+      padding-top: 70px;
+    }
+  
+    #footer .copyright {
+      justify-content: space-around !important;
+    }
+  
+    #chance-for-jobs .chance-item-container {
+      padding-right: 15px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    #livestream .live-text {
+      margin-top: 50px;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

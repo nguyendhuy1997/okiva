@@ -1,0 +1,76 @@
+<section class="banner">
+    <div class="banner-contact">
+        <h1>Liên hệ <br>với chúng tôi</h1>
+        <div class="banner-switch-button-mobile">
+            <button (click)="changeData(0)" id="office" class="active"><span class="pr-2"><img src="../../../assets/img/head-office.png" alt=""></span>Head
+                Office</button>
+            <button (click)="changeData(1)" id="studio" class=""><span class="pr-2"><img src="../../../assets/img/studio-logo.png" alt=""></span>Studio
+                Livestream</button>
+        </div>
+
+    </div>
+    <div class="banner-switch-button">
+        <button (click)="changeData(0)" id="office" class="active"><span ><img src="../../../assets/img/head-office.png" alt=""></span>Head
+            Office</button>
+        <button (click)="changeData(1)" id="studio" class=""><span><img src="../../../assets/img/studio-logo.png" alt=""></span>Studio
+            Livestream</button>
+    </div>
+    <img id="banner-bird" src="../../../assets/img/bird.png" alt="">
+    <button id="banner-phone"><i class="fas fa-phone-alt"></i>+84 283 111 287</button>
+
+
+</section>
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 contact-left">
+                <ul>
+                    <li class="pb-2">
+                        <div class="img text-center"><img src="../../../assets/img/phone.png" alt=""></div>
+                        <div class="contact-left-text">
+                            <div class="title"> <b>Phone</b> </div>
+                            <div class="content" >(+84) 9286 250 37</div>
+                        </div>
+                    </li>
+                    <li class="pb-2">
+
+                        <div class="img text-center"><img src="../../../assets/img/location.png" alt=""></div>
+
+                        <div class="contact-left-text">
+                            <div class="title"> <b>Office</b> </div>
+                            <div class="content" innerHTML="{{office}}"></div>
+                        </div>
+                    </li>
+                    <li class="pb-2">
+
+                        <div class="img text-center"><img src="../../../assets/img/mail.png" alt=""></div>
+
+                        <div class="contact-left-text">
+                            <div class="title"> <b>Email</b> </div>
+                            <div class="content" innerHTML="{{email}}"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-7 col-sm-12 contact-right form">
+                <h2 class="pb-3">Gửi tin nhắn</h2>
+                <div class="pb-3"><input type="text" class="pb-2" type="" placeholder="Name" id="name"></div>
+                <div class='row pb-3'>
+                    <div class='col-sm-6 pb-3 text-left'><input type="text" placeholder="Email" id="email"> </div>
+                    <div class='col-sm-6 pb-0 text-right'><input type="text" placeholder="Phone" id="phone"> </div>
+                </div>
+                <div class="pb-3">
+                    <textarea type="text" placeholder="Message" id="message"></textarea>
+                </div>
+                <div class="btn-submit text-right pb-5 pt-3">
+                    <button>
+                        <b>Gửi Ngay!</b>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <img class="map img-fluid" src="../../../assets/img/map-1.jpeg" alt="">
+        </div>
+    </div>
+</section>
