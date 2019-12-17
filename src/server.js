@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/okiva-demo'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/okiva-demo>/index.html'));
+res.sendFile(path.join(__dirname+'/dist/okiva-demo/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
