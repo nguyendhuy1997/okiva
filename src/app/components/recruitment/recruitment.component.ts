@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecruitmentComponent implements OnInit {
 
+  config = {
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    autoplay:{
+      delay:5000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  };
   constructor() { }
 
   ngOnInit() {
