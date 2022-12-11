@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "angular2-useful-swiper": "^8.0.1-beta.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ng2-carousel-3d": "^0.2.1",
     "ngx-carousel-3d": "^1.0.1",
     "ngx-swiper-wrapper": "^8.0.2",
